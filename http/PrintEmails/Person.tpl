@@ -2,7 +2,7 @@ The name is {{.Name}}.
 The age is {{.Age}}.
 
 {{range.Emails}}
-	An email is {{.}}
+	An email is {{.|email_expand}}
 {{end}}
 
 {{with.Jobs}}
