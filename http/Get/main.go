@@ -14,7 +14,7 @@ func main() {
 		os.Exit(1)
 	}
 	url := os.Args[1]
-	response, err := http.Head(url)
+	response, err := http.Get(url)
 	if nil != err {
 		fmt.Println(err.Error())
 		os.Exit(2)
